@@ -1,14 +1,14 @@
-function Testimonials () {
+function Prices () {
     return(
-        <section class="bg-white dark:bg-gray-900 lg:p-10 md:p-5 sm:p-1">
+    <section>
         <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
-        <h2 className="text-center text-xl font-semibold text-indigo-700 mb-3">O QUE ESTÃO DIZENDO</h2>
-        <h1 class="text-2xl font-semibold text-center text-gray-800 lg:text-5xl dark:text-white">
-            Palavras dos nossos usuários
+        <h2 className="text-center text-xl font-semibold text-indigo-700 mb-3">NOSSOS PREÇOS</h2>
+        <h1 class="text-2xl font-semibold text-center text-gray-800 lg:text-5xl  ">
+            Pronto para começar?
         </h1>
 
         <p class="max-w-2xl mx-auto mt-6 text-center text-lg text-gray-300">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo incidunt ex placeat modi magni quia error
+            Escolha um dos nossos planos
 
         </p>
 
@@ -47,7 +47,7 @@ function Testimonials () {
                 </div>
             </div>
 
-            <div class="p-8 border rounded-lg dark:border-gray-700">
+            <div class="p-8 border rounded-lg dark:border-gray-700 hover:scale-105 duration-300">
                 <p class="leading-loose text-gray-500 dark:text-gray-400">
                     “Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quibusdam ducimus libero ad
                     tempora doloribus expedita laborum saepe voluptas perferendis delectus assumenda rerum, culpa
@@ -69,4 +69,4 @@ function Testimonials () {
     )
 }
 
-export default Testimonials
+export default Prices

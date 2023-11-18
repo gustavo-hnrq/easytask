@@ -1,7 +1,7 @@
 function Header () {
     return(
-        <header className="flex flex-wrap md:justify-start md:flex-nowrap z-50 w-full text-sm sticky top-0">
-        <nav className="mt-6 relative max-w-[85rem] w-full bg-white border border-gray-200 rounded-[36px] mx-2 py-3 px-4 md:flex md:items-center md:justify-between md:py-0 md:px-6 lg:px-8 xl:mx-auto ">
+        <header className="flex flex-wrap md:justify-start md:flex-nowrap z-50 w-full text-sm sticky top-0 ">
+        <nav className="mt-6 relative max-w-[85rem] w-full bg-white border border-gray-200 rounded-[36px] mx-2 py-3 px-4 md:flex md:items-center md:justify-between md:py-0 md:px-6 lg:px-8 xl:mx-auto h-full">
           <div className="flex items-center justify-between">
             <a className="flex-none text-xl font-semibold" href="#">EasyTask</a>
             <div className="md:hidden">
