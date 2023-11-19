@@ -63,7 +63,7 @@ function Login() {
     <div className="w-1/2 h-screen hidden lg:block">
       <img
         src="https://i.ibb.co/b1Vpq7f/Background-5-4.png"
-        className="object-cover w-full h-full rounded-bl-[128px]"
+        className="object-cover w-full h-full rounded-bl-[128px] drop-shadow-sm	"
         alt="Background Image"
       />
     </div>
