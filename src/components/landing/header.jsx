@@ -4,7 +4,7 @@ function Header () {
         <nav className="mt-6 relative max-w-[85rem] w-full bg-white border border-gray-200 rounded-md mx-2 py-3 px-4 md:flex md:items-center md:justify-between md:py-0 md:px-6 lg:px-8 xl:mx-auto h-full ">
           <div className="flex items-center justify-between">
             <a className="flex text-xl font-semibold" href="#">EasyTask</a>
-            <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+            <svg className="text-gray-800" xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
               <path d="M13.5 1L26 22.9699L22.3226 26L15.3108 21.0762H19.3784L13.5 10.4699L7.6402 21.0762H11.6639L4.67737 26L1 22.9699L13.5 1Z" stroke="white" stroke-width="2" stroke-linejoin="round"/>
             </svg>
             <div className="md:hidden">
