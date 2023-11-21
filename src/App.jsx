@@ -6,7 +6,7 @@ function App() {
 
   return (
     <div className='subpixel-antialiased'>
-      <LandingPage />
+      <LandingPage/>
     </div>
   )
 }

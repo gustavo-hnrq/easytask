@@ -7,26 +7,26 @@ function Login() {
       <form action="#" method="POST">
         <div className="mb-4">
           <label htmlFor="username" className="block text-gray-600">
-            Username
+            Email
           </label>
           <input
             type="text"
             id="username"
             name="username"
             className="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-blue-500"
-            autoComplete="off"
+            autoComplete="on"
           />
         </div>
         <div className="mb-4">
           <label htmlFor="password" className="block text-gray-600">
-            Password
+            Senha
           </label>
           <input
             type="password"
             id="password"
             name="password"
             className="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-blue-500"
-            autoComplete="off"
+            autoComplete="on"
           />
         </div>
         <div className="mb-4 flex items-center">
@@ -37,12 +37,12 @@ function Login() {
             className="text-blue-500"
           />
           <label htmlFor="remember" className="text-gray-600 ml-2">
-            Remember Me
+            Manter logado
           </label>
         </div>
         <div className="mb-6 text-blue-500">
           <a href="#" className="hover:underline">
-            Forgot Password?
+            Esqueci minha senha
           </a>
         </div>
         <button
@@ -52,12 +52,6 @@ function Login() {
           Login
         </button>
       </form>
-      <div className="mt-6 text-blue-500 text-center">
-        <a href="#" className="hover:underline">
-          Sign up Here
-        </a>
-      </div>
-
       
     </div>
     <div className="w-1/2 h-screen hidden lg:block">

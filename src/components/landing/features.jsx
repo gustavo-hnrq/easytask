@@ -5,9 +5,7 @@ function Features () {
 
         <h2 className="text-center text-xl font-bold text-indigo-700 mb-3 text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-indigo-700">POR QUE USAR</h2>
         <h1 className="text-center text-5xl font-bold text-gray-800 mb-8">Fácil, Simples, Acessível</h1>
-        <p className="text-center text-lg text-gray-600 mb-10">Otimize a gestão de projetos com nosso Kanban Board: vantagens que impulsionam <br /> a produtividade e simplificam a colaboração da sua equipe.
-
-</p>
+        <p className="text-center text-lg text-gray-600 mb-10">Otimize a gestão de projetos com nosso Kanban Board: vantagens que impulsionam <br /> a produtividade e simplificam a colaboração da sua equipe.</p>
 
 
           <div className="grid md:grid-cols-2 gap-12">
