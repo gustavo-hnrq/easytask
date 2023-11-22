@@ -1,9 +1,12 @@
+import { Fade } from "react-awesome-reveal";
+
 
 function Hero() {
     return(
-      <section>
+      <Fade cascade damping={1e-1} direction='up' triggerOnce={true}>
+          <section>
           <div className="relative overflow-hidden">
-            <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-10">
+          <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-10">
               <div className="max-w-2xl text-center mx-auto">
                 <h1 className="text-4xl font-bold text-gray-800 sm:text-4xl md:text-6xl">Organize e melhore sua produtividade</h1>
                 <p className="mt-6 text-lg text-gray-600 mb-6">Simples e flexível. Bastam quadros, listas e cartões para obter uma visualização clara de quem está fazendo o que e o que precisa ser feito.</p>
@@ -25,9 +28,13 @@ function Hero() {
                   <div className="w-96 h-96 rounded-full"></div>
                 </div>
               </div>
+
             </div>
+
           </div>
-      </section>
+          </section>
+      </Fade>
+
     );
 }
 
