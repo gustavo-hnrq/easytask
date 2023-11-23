@@ -1,6 +1,6 @@
 function TestimonialCard({ content, imageSrc, name, role }) {
   return (
-    <div className="p-8 border rounded-lg hover:scale-105 duration-300 hover:shadow-lg hover:border-indigo-700 hover:shadow-indigo-500/50 ease-out">
+    <div className="p-8 duration-300 ease-out border rounded-lg hover:scale-105 hover:shadow-lg hover:border-indigo-700 hover:shadow-indigo-500/50">
       <p className="leading-loose text-gray-600">{content}</p>
 
       <div className="flex items-center mt-8 -mx-2">
@@ -23,9 +23,9 @@ function Testimonials() {
   return (
     <section>
       <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
-        <h2 className="text-center text-xl font-bold mb-3 text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-indigo-700">O QUE ESTÃO DIZENDO</h2>
-        <h1 className="text-center font-bold text-gray-800 sm:text-4xl md:text-6xl lg:text-5xl mb-8">Palavras dos nossos usuários</h1>
-        <p className="text-center text-lg text-gray-600 mt-10">Veja como a EasyTask revoluciona a gestão de projetos. Descubra experiências <br /> dos usuários e transforme a colaboração da sua equipe.</p>
+        <h2 className="mb-3 text-xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-indigo-700">O QUE ESTÃO DIZENDO</h2>
+        <h1 className="mb-8 text-4xl font-bold text-center text-gray-800 sm:text-4xl md:text-5xl">Palavras dos nossos usuários</h1>
+        <p className="mt-10 text-lg text-center text-gray-600">Veja como a EasyTask revoluciona a gestão de projetos. Descubra experiências <br /> dos usuários e transforme a colaboração da sua equipe.</p>
 
         <section className="grid grid-cols-1 gap-8 mt-8 xl:mt-12 lg:grid-cols-2 xl:grid-cols-3">
           {/* Testimonial 1 */}
