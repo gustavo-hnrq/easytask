@@ -1,5 +1,6 @@
-import LandingPage from './pages/landing-page/landing-page'
-import LoginPage from './pages/login-page/login-page'
+import LandingPage from './pages/landing-page'
+import LoginPage from './pages/login-page'
+import SignupPage from './pages/signup-page'
 import './App.css'
 
 function App() {
