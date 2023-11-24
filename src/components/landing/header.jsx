@@ -3,7 +3,7 @@ import { Fade } from "react-awesome-reveal"
 function Header () {
   
     return(
-        <header className="sticky top-0 z-50 flex flex-wrap w-full text-sm md:justify-start md:flex-nowrap ">
+        <header className="sticky top-0 z-50 flex flex-wrap w-full text-sm md:justify-start md:flex-nowrap">
         <nav className="mt-6 relative max-w-[85rem] w-full bg-white border border-gray-200 rounded-md mx-2 py-3 px-4 md:flex md:items-center md:justify-between md:py-0 md:px-6 lg:px-8 xl:mx-auto h-full ">
         <Fade cascade damping={1e-1} direction='down' triggerOnce={true}>
 
