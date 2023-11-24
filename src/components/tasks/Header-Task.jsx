@@ -14,6 +14,8 @@ function Header () {
 
             <a className="flex text-xl font-bold" href="#">EasyTask</a>
 
+            <p className="pl-5 ml-5 border-l border-gray-300 font-medium text-lg">Overview Tasks</p>
+
             {/* BOTÃO DO MENU QUE APARECE ABAIXO DOS 768PX */}
             <div className="md:hidden">
               <button type="button" className="flex items-center justify-center w-8 h-8 text-sm font-semibold text-gray-800 border border-gray-200 rounded-full hs-collapse-toggle hover:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none" data-hs-collapse="#navbar-collapse-with-animation" aria-controls="navbar-collapse-with-animation" aria-label="Toggle navigation">
@@ -24,6 +26,7 @@ function Header () {
 
 
           </div>
+
           <div className="hidden overflow-hidden transition-all duration-300 hs-collapse basis-full grow md:block">
             <div className="flex flex-col mt-5 gap-y-4 gap-x-0 md:flex-row md:items-center md:justify-end md:gap-y-0 md:gap-x-7 md:mt-0 md:ps-7">
               <a className="flex items-center font-medium gap-x-2 md:border-s md:border-gray-300 md:my-6 md:ps-6 dark:border-gray-700 " href="#">
