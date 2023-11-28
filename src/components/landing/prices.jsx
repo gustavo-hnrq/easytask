@@ -45,7 +45,7 @@ function Prices () {
             </div>
 
             {/* CARD PREÇO PLANO PRO */}
-            <div className="flex flex-col max-w-lg p-6 mx-auto text-center text-gray-900 duration-300 ease-in-out bg-gray-100 border border-gray-200 rounded-lg shadow hover:scale-105">
+            <div className="flex flex-col max-w-lg p-6 mx-auto text-center text-gray-900 duration-300 ease-in-out bg-white border border-gray-200 rounded-lg shadow hover:scale-105">
                 <h3 className="mb-4 text-2xl font-bold">Pro</h3>
                 <p className="leading-loose text-gray-600 sm:text-lg">Relevante para vários usuários, suporte estendido e premium.</p>
                 <div className="flex items-baseline justify-center my-8">
