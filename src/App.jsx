@@ -8,7 +8,6 @@ function App() {
 
   return (
     <div className='subpixel-antialiased'>
-      <LandingPage />
       <TasksPage/>
     </div>
   )

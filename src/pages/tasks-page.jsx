@@ -1,12 +1,10 @@
 import Header from "../components/tasks/Header-Task";
-import Aside from "../components/tasks/Aside";
 import MainTasks from "../components/tasks/MainTasks";
 
 function tasksPage() {
     return (
-        <div className="">
+        <div className="flex flex-col item-center justify-center mx-auto max-w-[85rem]">
             <Header />
-            <Aside />
             <MainTasks />
         </div> 
     );
