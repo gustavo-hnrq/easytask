@@ -14,7 +14,7 @@ function Hero() {
                 
                 <a className="inline-flex items-center px-4 py-3 mr-2 text-sm font-semibold text-white duration-300 ease-out rounded-full gap-x-2 bg-gradient-to-r from-purple-500 to-indigo-700 hover:scale-105 hover:shadow-xl hover:shadow-indigo-500/50 ">Comece agora</a>
 
-                <a className="inline-flex items-center px-4 py-3 mb-6 text-sm font-semibold text-gray-800 duration-300 border border-gray-800 rounded-full gap-x-2 hover:border-gray-500 hover:text-gray-500 hover:scale-105">Ver preços </a>
+                <a className="inline-flex items-center px-4 py-3 mb-6 text-sm font-semibold text-gray-800 duration-300 border border-gray-800 rounded-full gap-x-2 hover:border-gray-500 hover:text-gray-500 hover:scale-105" href="#prices">Ver preços </a>
               </div>
 
               <div className="relative max-w-5xl mx-auto mt-10">

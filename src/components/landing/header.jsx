@@ -12,9 +12,9 @@ function Header () {
               <path d="M13.5 1L26 22.9699L22.3226 26L15.3108 21.0762H19.3784L13.5 10.4699L7.6402 21.0762H11.6639L4.67737 26L1 22.9699L13.5 1Z" stroke="black" stroke-width="2" stroke-linejoin="round"/>
             </svg>
 
-            <a className="flex text-xl font-bold max-sm:invisible" href="#">EasyTask</a>
+            <a className="flex text-xl font-bold" href="#">EasyTask</a>
           </div>
-          <div className="hidden overflow-hidden transition-all duration-300 hs-collapse basis-full grow md:block">
+          <div className="transition-all duration-300 hs-collapse basis-full grow md:block">
             <div className="flex flex-col mt-5 gap-y-4 gap-x-0 md:flex-row md:items-center md:justify-end md:gap-y-0 md:gap-x-7 md:mt-0 md:ps-7">
               <a className="flex items-center font-medium gap-x-2 md:border-s md:border-gray-300 md:my-6 md:ps-6 dark:border-gray-700 " href="#">
                 Log in
