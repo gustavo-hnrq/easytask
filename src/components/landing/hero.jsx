@@ -21,7 +21,7 @@ function Hero() {
                 <div className="w-full object-cover h-96 sm:h-[480px] bg-[url('https://www.icolorpalette.com/download/solidcolorimage/000000_solid_color_background_icolorpalette.png')] bg-no-repeat bg-center bg-cover rounded-xl"></div>
 
                 <div className="absolute bottom-24 -start-24 blur-3xl -z-[1] w-64 h-64 bg-gradient-to-b from-purple-500 to-indigo-700 p-px rounded-full">
-                  <div className="w-64 h-64 rounded-full "></div>
+                  <div className="w-64 h-64 rounded-full"></div>
                 </div>
 
                 <div className="absolute -top-12 -end-20 blur-3xl -z-[1] w-96 h-96 bg-gradient-to-t from-purple-500 to-indigo-700 p-px rounded-full">

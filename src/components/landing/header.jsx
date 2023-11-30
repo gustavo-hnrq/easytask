@@ -15,9 +15,13 @@ function Header () {
             <a className="flex text-xl font-bold" href="#">EasyTask</a>
           </div>
           <div className="transition-all duration-300 hs-collapse basis-full grow md:block">
-            <div className="flex flex-col mt-5 gap-y-4 gap-x-0 md:flex-row md:items-center md:justify-end md:gap-y-0 md:gap-x-7 md:mt-0 md:ps-7">
-              <a className="flex items-center font-medium gap-x-2 md:border-s md:border-gray-300 md:my-6 md:ps-6 dark:border-gray-700 " href="#">
-                Log in
+            <div className="flex gap-5 mt-5 gap-y-4 gap-x-4 md:items-center md:justify-end md:gap-y-0 md:gap-x-7 md:mt-0 md:ps-7">
+              <a className="flex items-center font-medium gap-x-2 md:my-6 md:ps-6" href="#">
+                Login
+              </a>
+
+              <a className="flex items-center font-medium gap-x-2 md:border-s md:border-gray-300 md:my-6 md:ps-6" href="#">
+                Singup
               </a>
             </div>
           </div>
