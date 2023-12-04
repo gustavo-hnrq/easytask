@@ -1,7 +1,7 @@
 function Prices () {
     return(
 
-    <section>
+    <section id="prices">
     <div className="py-8 px-4 mx-auto max-w-[85rem] lg:py-16 lg:px-6">
         <div className="max-w-screen-md mx-auto mb-8 text-center lg:mb-12">
             <h2 className="mb-3 text-xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-indigo-700">NOSSOS PREÇOS</h2>
@@ -41,7 +41,7 @@ function Prices () {
                         <span>Updates gratuitos: <span className="font-semibold">1 mês</span></span>
                     </li>
                 </ul>
-                <a href="#" className="text-white font-semibold px-5 py-2.5 text-center bg-gradient-to-r from-purple-500 to-indigo-700 hover:shadow-md rounded-md hover:shadow-indigo-500/50 duration-300 ease-out">Comece agora</a>
+                <a href="login" className="text-white font-semibold px-5 py-2.5 text-center bg-gradient-to-r from-purple-500 to-indigo-700 hover:shadow-md rounded-md hover:shadow-indigo-500/50 duration-300 ease-out">Comece agora</a>
             </div>
 
             {/* CARD PREÇO PLANO PRO */}
@@ -74,7 +74,7 @@ function Prices () {
                         <span>Updates gratuitos: <span className="font-semibold">12 meses</span></span>
                     </li>
                 </ul>
-                <a href="#" className="text-white font-semibold px-5 py-2.5 text-center bg-gradient-to-r from-purple-500 to-indigo-700 hover:shadow-md rounded-md hover:shadow-indigo-500/50 duration-300 ease-out">Comece agora</a>
+                <a href="login" className="text-white font-semibold px-5 py-2.5 text-center bg-gradient-to-r from-purple-500 to-indigo-700 hover:shadow-md rounded-md hover:shadow-indigo-500/50 duration-300 ease-out">Comece agora</a>
             </div>
 
             {/* CARD PREÇO PLANO ULTIMATE */}
@@ -107,7 +107,8 @@ function Prices () {
                         <span>Updates gratuitos: <span className="font-semibold">36 meses</span></span>
                     </li>
                 </ul>
-                <a href="#" className="text-white font-semibold px-5 py-2.5 text-center bg-gradient-to-r from-purple-500 to-indigo-700 hover:shadow-md rounded-md hover:shadow-indigo-500/50 duration-300 ease-out">Comece agora</a>
+
+                    <a href="login" className="text-white font-semibold px-5 py-2.5 text-center bg-gradient-to-r from-purple-500 to-indigo-700 hover:shadow-md rounded-md hover:shadow-indigo-500/50 duration-300 ease-out">Comece agora</a>
             </div>
         </div>
     </div>

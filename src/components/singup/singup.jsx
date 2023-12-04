@@ -4,7 +4,7 @@ function Signup() {
   <div className="flex items-center justify-center h-screen">
     <div className="w-full p-8 lg:p-36 md:p-52 sm:20 lg:w-1/2">
     <h1 className="my-5 text-2xl font-bold text-gray-800 sm:text-3xl md:text-4xl">Signup</h1>
-      <p className="mb-4 text-gray-600 text-md">Cadastra-se com um email e senha</p>
+      <p className="mb-4 text-gray-600 text-md">Cadastre-se com um email e senha</p>
       
       <hr className="h-px my-5 bg-gray-200 border-0" />
 
@@ -52,7 +52,7 @@ function Signup() {
             className="text-blue-500"
           />
           <label className="ml-2 text-gray-600">
-            Manter logado
+            Continuar logado
           </label>
         </div>
         <div className="mb-6 text-blue-500">

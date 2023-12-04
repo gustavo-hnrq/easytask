@@ -1,4 +1,8 @@
 function Login() {
+  const Submit = (e) => {
+    e.preventDefault();
+  }
+
     return(
 <section>
   <div className="flex items-center justify-center h-screen">
@@ -9,7 +13,7 @@ function Login() {
       <hr class="h-px my-5 bg-gray-200 border-0" />
 
 
-      <form action="#" method="POST">
+      <form onSubmit={Submit} method="POST">
         <div className="mb-4">
           <label className="block mb-2 text-gray-600">
             Email

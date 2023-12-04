@@ -17,3 +17,7 @@
         background-color: rgb(68, 56, 202);
     }
 }
+
+.personalized-height {
+    height: calc(100vh - 118px);
+}

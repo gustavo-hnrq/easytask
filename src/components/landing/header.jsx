@@ -1,4 +1,5 @@
 import { Fade } from "react-awesome-reveal"
+import { Link } from "react-router-dom";
 
 function Header () {
   
@@ -25,11 +26,13 @@ function Header () {
 
           </div>
           <div className="hidden overflow-hidden transition-all duration-300 hs-collapse basis-full grow md:block">
-            <div className="flex flex-col mt-5 gap-y-4 gap-x-0 md:flex-row md:items-center md:justify-end md:gap-y-0 md:gap-x-7 md:mt-0 md:ps-7">
-              <a className="flex items-center font-medium gap-x-2 md:border-s md:border-gray-300 md:my-6 md:ps-6 dark:border-gray-700 " href="#">
-                Log in
-              </a>
-            </div>
+            <Link to='login'>
+              <div className="flex flex-col mt-5 gap-y-4 gap-x-0 md:flex-row md:items-center md:justify-end md:gap-y-0 md:gap-x-7 md:mt-0 md:ps-7">
+                <a className="flex items-center font-medium gap-x-2 md:border-s md:border-gray-300 md:my-6 md:ps-6 dark:border-gray-700 " href="#">
+                  Log in
+                </a>
+              </div>
+            </Link>
           </div>
           </Fade>
 
