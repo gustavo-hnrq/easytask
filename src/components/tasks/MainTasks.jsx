@@ -15,50 +15,50 @@ function MainTasks() {
                         </div>
 
                         <div className="mt-5"> {/* Main */}
-                            <div className="flex flex-col min-w-[250px] md:min-w-[280px] max-w-xs p-6 gap-3 red rounded-md bg-white">
-                                <h1 className="font-medium text-base md:text-xl">Lorem Ipsum</h1>
-                                <p className="text-xs font-thin md:text-base text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim adipisci amet ex, officia porro qui eligendi repellat, sapiente et, totam harum facilis quibusdam hic temporibus odio non placeat nulla reiciendis.</p>
-                                <p className="font-thin text-xs">dd/mm/yyyy</p>
+                            <div className="flex flex-col min-w-[250px] md:min-w-[280px] max-w-xs p-6 gap-3 red rounded-md bg-white dark:bg-slate-900">
+                                <h1 className="font-medium text-base md:text-xl dark:text-white">Lorem Ipsum</h1>
+                                <p className="text-xs font-thin md:text-base text-justify dark:text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim adipisci amet ex, officia porro qui eligendi repellat, sapiente et, totam harum facilis quibusdam hic temporibus odio non placeat nulla reiciendis.</p>
+                                <p className="font-thin text-xs dark:text-white">dd/mm/yyyy</p>
                             </div>
                         </div>
 
                         <div className="mt-5"> {/* Main */}
-                            <div className="flex flex-col min-w-[250px] md:min-w-[280px] max-w-xs p-6 gap-3 red rounded-md bg-white">
-                                <h1 className="font-medium text-base md:text-xl">Lorem Ipsum</h1>
-                                <p className="text-xs font-thin md:text-base text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim adipisci amet ex, officia porro qui eligendi repellat, sapiente et, totam harum facilis quibusdam hic temporibus odio non placeat nulla reiciendis.</p>
-                                <p className="font-thin text-xs">dd/mm/yyyy</p>
+                            <div className="flex flex-col min-w-[250px] md:min-w-[280px] max-w-xs p-6 gap-3 red rounded-md bg-white dark:bg-slate-900">
+                                <h1 className="font-medium text-base md:text-xl dark:text-white">Lorem Ipsum</h1>
+                                <p className="text-xs font-thin md:text-base text-justify dark:text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim adipisci amet ex, officia porro qui eligendi repellat, sapiente et, totam harum facilis quibusdam hic temporibus odio non placeat nulla reiciendis.</p>
+                                <p className="font-thin text-xs dark:text-white">dd/mm/yyyy</p>
                             </div>
                         </div>
 
                         <div className="mt-5"> {/* Main */}
-                            <div className="flex flex-col min-w-[250px] md:min-w-[280px] max-w-xs p-6 gap-3 red rounded-md bg-white">
-                                <h1 className="font-medium text-base md:text-xl">Lorem Ipsum</h1>
-                                <p className="text-xs font-thin md:text-base text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim adipisci amet ex, officia porro qui eligendi repellat, sapiente et, totam harum facilis quibusdam hic temporibus odio non placeat nulla reiciendis.</p>
-                                <p className="font-thin text-xs">dd/mm/yyyy</p>
+                            <div className="flex flex-col min-w-[250px] md:min-w-[280px] max-w-xs p-6 gap-3 red rounded-md bg-white dark:bg-slate-900">
+                                <h1 className="font-medium text-base md:text-xl dark:text-white">Lorem Ipsum</h1>
+                                <p className="text-xs font-thin md:text-base text-justify dark:text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim adipisci amet ex, officia porro qui eligendi repellat, sapiente et, totam harum facilis quibusdam hic temporibus odio non placeat nulla reiciendis.</p>
+                                <p className="font-thin text-xs dark:text-white">dd/mm/yyyy</p>
                             </div>
                         </div>
 
                         <div className="mt-5"> {/* Main */}
-                            <div className="flex flex-col min-w-[250px] md:min-w-[280px] max-w-xs p-6 gap-3 red rounded-md bg-white">
-                                <h1 className="font-medium text-base md:text-xl">Lorem Ipsum</h1>
-                                <p className="text-xs font-thin md:text-base text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim adipisci amet ex, officia porro qui eligendi repellat, sapiente et, totam harum facilis quibusdam hic temporibus odio non placeat nulla reiciendis.</p>
-                                <p className="font-thin text-xs">dd/mm/yyyy</p>
+                            <div className="flex flex-col min-w-[250px] md:min-w-[280px] max-w-xs p-6 gap-3 red rounded-md bg-white dark:bg-slate-900">
+                                <h1 className="font-medium text-base md:text-xl dark:text-white">Lorem Ipsum</h1>
+                                <p className="text-xs font-thin md:text-base text-justify dark:text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim adipisci amet ex, officia porro qui eligendi repellat, sapiente et, totam harum facilis quibusdam hic temporibus odio non placeat nulla reiciendis.</p>
+                                <p className="font-thin text-xs dark:text-white">dd/mm/yyyy</p>
                             </div>
                         </div>
 
                         <div className="mt-5"> {/* Main */}
-                            <div className="flex flex-col min-w-[250px] md:min-w-[280px] max-w-xs p-6 gap-3 red rounded-md bg-white">
-                                <h1 className="font-medium text-base md:text-xl">Lorem Ipsum</h1>
-                                <p className="text-xs font-thin md:text-base text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim adipisci amet ex, officia porro qui eligendi repellat, sapiente et, totam harum facilis quibusdam hic temporibus odio non placeat nulla reiciendis.</p>
-                                <p className="font-thin text-xs">dd/mm/yyyy</p>
+                            <div className="flex flex-col min-w-[250px] md:min-w-[280px] max-w-xs p-6 gap-3 red rounded-md bg-white dark:bg-slate-900">
+                                <h1 className="font-medium text-base md:text-xl dark:text-white">Lorem Ipsum</h1>
+                                <p className="text-xs font-thin md:text-base text-justify dark:text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim adipisci amet ex, officia porro qui eligendi repellat, sapiente et, totam harum facilis quibusdam hic temporibus odio non placeat nulla reiciendis.</p>
+                                <p className="font-thin text-xs dark:text-white">dd/mm/yyyy</p>
                             </div>
                         </div>
 
                         <div className="mt-5"> {/* Main */}
-                            <div className="flex flex-col min-w-[250px] md:min-w-[280px] max-w-xs p-6 gap-3 red rounded-md bg-white">
-                                <h1 className="font-medium text-base md:text-xl">Lorem Ipsum</h1>
-                                <p className="text-xs font-thin md:text-base text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim adipisci amet ex, officia porro qui eligendi repellat, sapiente et, totam harum facilis quibusdam hic temporibus odio non placeat nulla reiciendis.</p>
-                                <p className="font-thin text-xs">dd/mm/yyyy</p>
+                            <div className="flex flex-col min-w-[250px] md:min-w-[280px] max-w-xs p-6 gap-3 red rounded-md bg-white dark:bg-slate-900">
+                                <h1 className="font-medium text-base md:text-xl dark:text-white">Lorem Ipsum</h1>
+                                <p className="text-xs font-thin md:text-base text-justify dark:text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim adipisci amet ex, officia porro qui eligendi repellat, sapiente et, totam harum facilis quibusdam hic temporibus odio non placeat nulla reiciendis.</p>
+                                <p className="font-thin text-xs dark:text-white">dd/mm/yyyy</p>
                             </div>
                         </div>
                     </div>
@@ -70,10 +70,10 @@ function MainTasks() {
                         </div>
 
                         <div className="mt-5"> {/* Main */}
-                            <div className="flex flex-col min-w-[250px] md:min-w-[280px] max-w-xs p-6 gap-3 yellow rounded-md bg-white">
-                                <h1 className="font-medium text-base md:text-xl">Lorem Ipsum</h1>
-                                <p className="text-xs font-thin md:text-base text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim adipisci amet ex, officia porro qui eligendi repellat, sapiente et, totam harum facilis quibusdam hic temporibus odio non placeat nulla reiciendis.</p>
-                                <p className="font-thin text-xs">dd/mm/yyyy</p>
+                            <div className="flex flex-col min-w-[250px] md:min-w-[280px] max-w-xs p-6 gap-3 yellow rounded-md bg-white dark:bg-slate-900">
+                                <h1 className="font-medium text-base md:text-xl dark:text-white">Lorem Ipsum</h1>
+                                <p className="text-xs font-thin md:text-base text-justify dark:text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim adipisci amet ex, officia porro qui eligendi repellat, sapiente et, totam harum facilis quibusdam hic temporibus odio non placeat nulla reiciendis.</p>
+                                <p className="font-thin text-xs dark:text-white">dd/mm/yyyy</p>
                             </div>
                         </div>
                     </div>
@@ -85,10 +85,10 @@ function MainTasks() {
                         </div>
 
                         <div className="mt-5"> {/* Main */}
-                            <div className="flex flex-col min-w-[250px] md:min-w-[280px] max-w-xs p-6 gap-3 green rounded-md bg-white">
-                                <h1 className="font-medium text-base md:text-xl">Lorem Ipsum</h1>
-                                <p className="text-xs font-thin md:text-base text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim adipisci amet ex, officia porro qui eligendi repellat, sapiente et, totam harum facilis quibusdam hic temporibus odio non placeat nulla reiciendis.</p>
-                                <p className="font-thin text-xs">dd/mm/yyyy</p>
+                            <div className="flex flex-col min-w-[250px] md:min-w-[280px] max-w-xs p-6 gap-3 green rounded-md bg-white dark:bg-slate-900">
+                                <h1 className="font-medium text-base md:text-xl dark:text-white">Lorem Ipsum</h1>
+                                <p className="text-xs font-thin md:text-base text-justify dark:text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim adipisci amet ex, officia porro qui eligendi repellat, sapiente et, totam harum facilis quibusdam hic temporibus odio non placeat nulla reiciendis.</p>
+                                <p className="font-thin text-xs dark:text-white">dd/mm/yyyy</p>
                             </div>
                         </div>
                     </div>
