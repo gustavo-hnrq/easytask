@@ -1,9 +1,12 @@
+import { useState } from "react";
 import { Fade } from "react-awesome-reveal"
 import { Link } from "react-router-dom";
 
 function Header () {
+  const [openTaskForm, setOpenTaskForm] = useState(false)
   
     return(
+      <>
         <header className="sticky top-0 z-50 flex flex-wrap w-full text-sm md:justify-start md:flex-nowrap ">
           <nav className="mt-6 relative max-w-[85rem] w-full bg-white border border-gray-200 rounded-md mx-2 py-1.5 md:py-3 px-1 md:px-4 md:flex md:items-center md:justify-between md:py-0 md:px-6 lg:px-8 xl:mx-auto h-full dark:bg-slate-900">
           <Fade cascade damping={1e-1} direction='down' triggerOnce={true}>
@@ -34,7 +37,7 @@ function Header () {
             <div className="hidden overflow-hidden transition-all duration-300 hs-collapse basis-full grow md:block">
               <div className="flex flex-col mt-5 gap-y-4 gap-x-0 md:flex-row md:items-center md:justify-end md:gap-y-0 md:gap-x-7 md:mt-0 md:ps-7">
 
-              <button className="px-5 py-1 bg-indigo-700 flex item-center justify-center rounded-xl text-white active-button ">Adicione uma tarefa +</button>
+              <button className="px-5 py-1 bg-indigo-700 flex item-center justify-center rounded-xl text-white active-button " onClick={() => setOpenTaskForm(true)}>Adicione uma tarefa +</button>
                 <Link to="/login">
                   <a className="flex items-center font-medium gap-x-2 md:border-s md:border-gray-300 md:my-6 md:ps-6 dark:border-gray-700 dark:text-white" href="#">
                     Logout
@@ -47,6 +50,16 @@ function Header () {
           </nav>
       </header>
 
+      {openTaskForm && (
+        <>
+          <div className="fixed top-0 left-0 w-screen h-screen bg-black opacity-75">dsadsadassa</div>
+          <div className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white p-4 rounded shadow-lg">
+          <div id="modal">Conteúdo do Modal</div>
+            <button onClick={() => setOpenTaskForm(false)}>Fechar</button>
+          </div>
+        </>
+      )}
+      </>
     );
 }
 
