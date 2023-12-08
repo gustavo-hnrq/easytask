@@ -6,12 +6,12 @@ import './Header-Task.css'
 function Header() {
   const [openTaskForm, setOpenTaskForm] = useState(false);
 
-  const [titulo, setTitulo] = useState("Title");
+  const [titulo, setTitulo] = useState("Enter a title for this card...");
   const handleChange = (event) => {
     setTitulo(event.target.value);
   };
   
-  const [description, setDescription] = useState("Task description");
+  const [description, setDescription] = useState("Add a more detailed description...");
   const handleChange2 = (event2) => {
     setDescription(event2.target.value);
   };
@@ -135,7 +135,7 @@ function Header() {
       {openTaskForm && (
         <>
           <div className="fixed top-0 left-0 w-screen h-screen bg-black opacity-75"></div>{/* Fundo escuro */}
-          <div className="fixed w-4/5 lg:w-2/4 h-3.5/5 top-96 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white p-4 rounded shadow-lg border-4 border-cyan-800">
+          <div className="fixed w-96 max-sm:w-80 h-3.5/5 top-96 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white p-4 rounded-lg shadow-3xl border-2">
             <div id="modal ">
               <div id="cores" className="flex justify-between">
                 <div>
@@ -143,36 +143,37 @@ function Header() {
                   <input type="radio" className="bt-yellow" onClick={() => setStatus("yellow")}/>
                   <input type="radio" className="bt-green"  onClick={() => setStatus("green")}/>
                 </div>
-                
-                <h2 className="text-right mr-4 text-xl">New Task</h2>
               </div>
               {/* <input type="radio" className="rounded-xl ml-10 p-2 border-4 border-yellow-500 display fixed hover:bg-yellow-500"onClick={() => ''}></input>
               <input type="radio" className=" ml-20 p-2 rounded-xl border-4 border-red-500 display fixed hover:bg-red-500"onClick={() => ''}/>
               <input type="radio" className=" ml-30 p-2 rounded-xl border-4 border-green-500 display fixed hover:bg-green-500"onClick={() => ''}/> */}
               
-              <input
-                className="m-4 px-1 py-1 w-11/12 border-2 border-blue-500"
-                type="text"
-                placeholder={titulo}
-                onChange={handleChange}
-              />
-              <br />
-              <textarea
-                className="m-4 px-1 py-1 w-11/12 h-60 resize-none border-2 border-blue-500"
-                type="text"
-                placeholder={description}
-                onChange={handleChange2}
-              />
-              <br />
-              <div className="flex justify-end gap-5">
+              <div className="flex flex-col justify-center mt-5 font-normal">
+                <span>Title</span>
+                <input
+                  className=" px-1 py-2 w-full border border-gray-300 rounded-md focus:outline-none focus:border-indigo-600 mb-5 "
+                  type="text"
+                  placeholder={titulo}
+                  onChange={handleChange}
+                />
+                <span>Description</span>
+                <textarea
+                  className="flex justify-center w-full p-5 px-1 py-1 h-60 resize-none border border-gray-300 rounded-md focus:outline-none focus:border-indigo-600"
+                  type="text"
+                  placeholder={description}
+                  onChange={handleChange2}
+                />
+              </div>
+
+              <div className="flex justify-end gap-5 mt-5">
               <button
-                className="px-5 py-1  bg-sky-500 rounded-xl hover:bg-sky-700"
+                className="px-5 py-2.5 font-semibold text-center text-white duration-300 ease-out rounded-lg bg-indigo-600 hover:shadow-md hover:bg-indigo-700 hover:shadow-indigo-500/50"
                 onClick={() => setOpenTaskForm(false)}
               >
                 Create
               </button>
               <button
-                className="px-5 py-1 bg-red-500 rounded-xl hover:bg-red-700"
+                className="px-5 py-2.5 font-semibold text-center text-white duration-300 ease-out rounded-lg bg-gray-200 hover:shadow-md hover:bg-gray-300 hover:shadow-gray-200/50"
                 onClick={() => setOpenTaskForm(false)}
               >
                 Cancel
