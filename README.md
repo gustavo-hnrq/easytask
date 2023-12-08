@@ -55,4 +55,3 @@ npm run dev
 ```
 
 Agora, o EasyTask estará disponível em http://localhost:5173 no seu navegador. Explore a plataforma localmente e simplifique a gestão de tarefas com facilidade.
-```
