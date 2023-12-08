@@ -1,15 +1,12 @@
-import LandingPage from './pages/landing-page'
-import LoginPage from './pages/login-page'
-import SignupPage from './pages/signup-page'
+import Rotas from "./routes/Rotas"
 import './App.css'
 
 function App() {
-
   return (
-    <div className='subpixel-antialiased'>
-      <LandingPage/>
+    <div className='subpixel-antialiased dark:bg-slate-900'>
+      <Rotas />
     </div>
   )
 }
 
-export default App
+export default App;
