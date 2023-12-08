@@ -11,18 +11,15 @@ O EasyTask visa simplificar a gestão de tarefas, proporcionando uma abordagem v
 
 ### Quadro Kanban Personalizável 🚀
 
-- Crie colunas adaptadas ao seu fluxo de trabalho.
 - Personalize etapas do processo para atender às especificidades do seu projeto.
 
 ### Interface Intuitiva 🎨
 
 - Navegação amigável para uma experiência simplificada.
-- Arraste e solte tarefas entre colunas com facilidade.
 
 ### Colaboração Eficiente 💬
  
 - Adicione membros da equipe aos projetos.
-- Comentários e atualizações diretamente no quadro para uma comunicação eficaz.
 
 ## Como Baixar e Rodar o Projeto 🚀
  
