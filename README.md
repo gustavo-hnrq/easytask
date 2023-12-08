@@ -1,4 +1,4 @@
-```markdown
+
 # EasyTask - Plataforma de Gestão de Tarefas com Kanban 📊
 
 Este repositório contém o código-fonte do EasyTask, uma plataforma de gestão de tarefas baseada no método Kanban. O EasyTask foi desenvolvido utilizando ReactJS e Tailwind CSS para oferecer uma experiência intuitiva e eficiente na organização de projetos.
