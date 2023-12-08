@@ -3,29 +3,29 @@
 
 Este repositório contém o código-fonte do EasyTask, uma plataforma de gestão de tarefas baseada no método Kanban. O EasyTask foi desenvolvido utilizando ReactJS e Tailwind CSS para oferecer uma experiência intuitiva e eficiente na organização de projetos.
 
-## Visão Geral
+## Visão Geral 🌐
 
 O EasyTask visa simplificar a gestão de tarefas, proporcionando uma abordagem visual e ágil através do método Kanban. Com esta plataforma, os usuários podem visualizar o fluxo de trabalho, otimizar processos e manter o controle total sobre suas atividades.
 
 ## Funcionalidades Principais
 
-### Quadro Kanban Personalizável
+### Quadro Kanban Personalizável 🚀
 
 - Crie colunas adaptadas ao seu fluxo de trabalho.
 - Personalize etapas do processo para atender às especificidades do seu projeto.
 
-### Interface Intuitiva
+### Interface Intuitiva 🎨
 
 - Navegação amigável para uma experiência simplificada.
 - Arraste e solte tarefas entre colunas com facilidade.
 
-### Colaboração Eficiente
-
+### Colaboração Eficiente 💬
+ 
 - Adicione membros da equipe aos projetos.
 - Comentários e atualizações diretamente no quadro para uma comunicação eficaz.
 
-## Como Baixar e Rodar o Projeto
-
+## Como Baixar e Rodar o Projeto 🚀
+ 
 Para executar o EasyTask em sua máquina local, siga as instruções abaixo:
 
 ## 1. Clone este repositório em sua máquina local:
