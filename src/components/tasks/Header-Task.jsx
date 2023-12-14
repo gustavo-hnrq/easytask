@@ -1,23 +1,64 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Fade } from "react-awesome-reveal";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import { useCreateTask } from "../../API/tasks";
+import { toast } from "react-toastify";
 import './Header-Task.css'
 
 function Header() {
   const [openTaskForm, setOpenTaskForm] = useState(false);
+  const navigate = useNavigate()  
 
-  const [titulo, setTitulo] = useState("Enter a title for this card...");
+  const [titulo, setTitulo] = useState("Title");
   const handleChange = (event) => {
     setTitulo(event.target.value);
   };
-  
-  const [description, setDescription] = useState("Add a more detailed description...");
+
+  const {data, error, loading, createTask} = useCreateTask()
+
+  const [description, setDescription] = useState("Task description");
   const handleChange2 = (event2) => {
     setDescription(event2.target.value);
   };
 
+  const date = new Date();
+  const dia = String(date.getDate()).padStart(2, "0");
+  const mes = String(date.getMonth() + 1).padStart(2, "0");
+  const ano = date.getFullYear();
+  const dataCreate = `${dia}/${mes}/${ano}`;
+
+  const handleSubmit = () => {
+    createTask(titulo, description);
+  }
+
+  useEffect(() => {
+    if (data){
+      if (data.message === "News succesfully created"){
+        toast.success("Task succesfuly created!")
+        setTimeout(() => {
+          window.location.reload()
+          navigate('/tasks')
+        }, 2500)
+        console.log(data, error)
+      } else {
+        toast.error("Error creating the task.")
+        navigate('/tasks')
+      }
+    }
+  }, [data])
+
+  const logout = () => localStorage.removeItem("token");  
+
   const [status, setStatus] = useState("");
-  
+
+  useEffect(() => {
+    const token = localStorage.getItem("token")
+    if (!token) {
+      navigate("/login")
+    }
+  }, [])
+
   return (
     <>
       <header className="sticky top-0 z-50 flex flex-wrap w-full text-sm md:justify-start md:flex-nowrap ">
@@ -111,17 +152,17 @@ function Header() {
             </div>
 
             <div className="hidden overflow-hidden transition-all duration-300 hs-collapse basis-full grow md:block">
-              <div className="flex flex-col mt-5 gap-y-4 gap-x-0 md:flex-row md:items-center md:justify-end md:gap-y-0 md:gap-x-7 md:mt-0 md:ps-7">
+              <div className="gap-2 flex-wrap flex flex-col mt-5 gap-y-4 gap-x-0 md:flex-row md:items-center md:justify-end md:gap-y-0 md:gap-x-7 md:mt-0 md:ps-7">
                 <button
-                  className="px-5 py-1 bg-indigo-700 flex item-center justify-center rounded-xl text-white active-button "
+                  className=" px-5 py-1 bg-indigo-700 flex item-center justify-center rounded-xl text-white active-button "
                   onClick={() => setOpenTaskForm(true)}
                 >
                   Add task +
                 </button>
-                <Link to="/login">
+                <Link to="/login" onClick={logout}>
                   <a
                     className="flex items-center font-medium gap-x-2 md:border-s md:border-gray-300 md:my-6 md:ps-6 dark:border-gray-700 dark:text-white"
-                    href="#"
+                    href="/"
                   >
                     Logout
                   </a>
@@ -134,50 +175,43 @@ function Header() {
 
       {openTaskForm && (
         <>
-          <div className="fixed top-0 left-0 w-screen h-screen bg-black opacity-75"></div>{/* Fundo escuro */}
-          <div className="fixed w-96 max-sm:w-80 h-3.5/5 top-96 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white p-4 rounded-lg shadow-3xl border-2">
+          <div className="fixed top-0 left-0 w-screen h-screen bg-black opacity-75 z-40"></div>{/* Fundo escuro */}
+          <div className="fixed w-4/5 lg:w-2/4 h-3.5/5 top-96 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white dark:bg-slate-900 p-4 rounded-3xl shadow-lg border-4 border-indigo-700 z-50">
             <div id="modal ">
               <div id="cores" className="flex justify-between">
-                <div>
-                  <input type="radio" className="bt-red"    onClick={() => setStatus("red")}/>
-                  <input type="radio" className="bt-yellow" onClick={() => setStatus("yellow")}/>
-                  <input type="radio" className="bt-green"  onClick={() => setStatus("green")}/>
-                </div>
-              </div>
-              {/* <input type="radio" className="rounded-xl ml-10 p-2 border-4 border-yellow-500 display fixed hover:bg-yellow-500"onClick={() => ''}></input>
-              <input type="radio" className=" ml-20 p-2 rounded-xl border-4 border-red-500 display fixed hover:bg-red-500"onClick={() => ''}/>
-              <input type="radio" className=" ml-30 p-2 rounded-xl border-4 border-green-500 display fixed hover:bg-green-500"onClick={() => ''}/> */}
-              
-              <div className="flex flex-col justify-center mt-5 font-normal">
-                <span>Title</span>
-                <input
-                  className=" px-1 py-2 w-full border border-gray-300 rounded-md focus:outline-none focus:border-indigo-600 mb-5 "
-                  type="text"
-                  placeholder={titulo}
-                  onChange={handleChange}
-                />
-                <span>Description</span>
-                <textarea
-                  className="flex justify-center w-full p-5 px-1 py-1 h-60 resize-none border border-gray-300 rounded-md focus:outline-none focus:border-indigo-600"
-                  type="text"
-                  placeholder={description}
-                  onChange={handleChange2}
-                />
-              </div>
 
-              <div className="flex justify-end gap-5 mt-5">
-              <button
-                className="px-5 py-2.5 font-semibold text-center text-white duration-300 ease-out rounded-lg bg-indigo-600 hover:shadow-md hover:bg-indigo-700 hover:shadow-indigo-500/50"
-                onClick={() => setOpenTaskForm(false)}
-              >
-                Create
-              </button>
-              <button
-                className="px-5 py-2.5 font-semibold text-center text-white duration-300 ease-out rounded-lg bg-gray-200 hover:shadow-md hover:bg-gray-300 hover:shadow-gray-200/50"
-                onClick={() => setOpenTaskForm(false)}
-              >
-                Cancel
-              </button>
+                <h2 className="text-center mr-4 text-xl font-medium dark:text-white">New Task</h2>
+              </div>
+              <input
+                className="dark:text-white m-4 px-1 py-1 w-11/12 border-2 rounded-xl dark:bg-slate-800 border-indigo-700"
+                type="text"
+                placeholder="Title"
+                onChange={handleChange}
+              />
+              <br />
+              <textarea
+                className="dark:text-white m-4 px-1 py-1 w-11/12 h-60 resize-none rounded-xl dark:bg-slate-800 border-2 border-indigo-700"
+                type="text"
+                placeholder="Task Description"
+                onChange={handleChange2}
+              />
+              <br />
+              <div className="flex justify-between gap-5">
+                <h3 className="dark:text-white">Criação:{dataCreate}</h3>
+                <div className="flex gap-5 flex-wrap">
+                <button
+                  className="px-5 text-white py-1  bg-indigo-700 rounded-xl hover:bg-indigo-900"
+                  onClick={() => handleSubmit()}
+                >
+                  Create
+                </button>
+                <button
+                  className="px-5 py-1 text-white bg-red-700 rounded-xl hover:bg-red-900"
+                  onClick={() => setOpenTaskForm(false)}
+                >
+                  Cancel
+                </button>
+                </div>
               </div>
             </div>
           </div>

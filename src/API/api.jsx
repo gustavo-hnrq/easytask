@@ -1,22 +1,35 @@
-import axios from "axios";
-import { useEffect, useState } from "react";
+import { useState, useEffect } from 'react';
+import axios from 'axios';
 
-//link da api: http://localhost:3000/
+// Custom Hook para Requisições de API
+const useAxios = (url) => {
+  const [data, setData] = useState(null);
+  const [error, setError] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const token = localStorage.getItem("token");
+  const headers = {
+    'Authorization': `Bearer ${token}`
+  };
 
-const Data = () => {
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        setLoading(true);
+        const response = await axios.get(`https://gentle-umbrella-ant.cyclic.app/EasyTask/${url}`, { headers });
+        setData(response.data);
+        setError(null);
+      } catch (error) {
+        setError(error);
+        setData(null);
+      } finally {
+        setLoading(false);
+      }
+    };
 
-    const [data, setData] = useState([])
+    fetchData();
+  }, [url]);
 
-    useEffect (() => {
-        axios.get("http://localhost:3000/")
-          .then(async(res) => {
-                await setData(res.data)
-          })
-          .catch(err => console.log(err))
+  return { data, error, loading };
+};
 
-    }, [])
-
-    return data
-}
-
-export default Data
+export default useAxios;
