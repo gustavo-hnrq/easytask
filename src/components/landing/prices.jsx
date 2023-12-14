@@ -1,3 +1,6 @@
+import { Link } from "react-router-dom";
+
+
 function Prices () {
     return(
 
@@ -48,7 +51,11 @@ function Prices () {
                         <span>Updates gratuitos: <span className="font-semibold">1 mês</span></span>
                     </li>
                 </ul>
-                <a href="/signUp" className="text-white font-semibold px-5 py-2.5 text-center bg-gradient-to-r from-purple-500 to-indigo-700 hover:shadow-md rounded-md hover:shadow-indigo-500/50 duration-300 ease-out">Comece agora</a>
+                <div className="w-full">
+                    <Link to='signUp'>
+                        <button className=" w-full text-white font-semibold px-5 py-2.5 text-center bg-gradient-to-r from-purple-500 to-indigo-700 hover:shadow-md rounded-md hover:shadow-indigo-500/50 duration-300 ease-out">Comece agora</button>
+                    </Link>
+                </div>
             </div>
 
             {/* CARD PREÇO PLANO PRO */}
@@ -88,8 +95,12 @@ function Prices () {
                         <span>Updates gratuitos: <span className="font-semibold">12 meses</span></span>
                     </li>
                 </ul>
-                <a href="/signUp" className="text-white font-semibold px-5 py-2.5 text-center bg-gradient-to-r from-purple-500 to-indigo-700 hover:shadow-md rounded-md hover:shadow-indigo-500/50 duration-300 ease-out">Comece agora</a>
-            </div>
+                <div className="w-full">
+                    <Link to='signUp'>
+                        <button className=" w-full text-white font-semibold px-5 py-2.5 text-center bg-gradient-to-r from-purple-500 to-indigo-700 hover:shadow-md rounded-md hover:shadow-indigo-500/50 duration-300 ease-out">Comece agora</button>
+                    </Link>
+                </div>     
+             </div>
 
             {/* CARD PREÇO PLANO ULTIMATE */}
             <div className="flex flex-col max-w-lg p-6 mx-auto text-center text-gray-900 duration-300 ease-in-out border border-gray-200 rounded-lg shadow hover:scale-105 hover:shadow-lg hover:border-indigo-700 hover:shadow-indigo-500/50">
@@ -127,8 +138,12 @@ function Prices () {
                         <span>Updates gratuitos: <span className="font-semibold">36 meses</span></span>
                     </li>
                 </ul>
-                <a href="/signUp" className="text-white font-semibold px-5 py-2.5 text-center bg-gradient-to-r from-purple-500 to-indigo-700 hover:shadow-md rounded-md hover:shadow-indigo-500/50 duration-300 ease-out">Comece agora</a>
-            </div>
+                <div className="w-full">
+                    <Link to='signUp'>
+                        <button className=" w-full text-white font-semibold px-5 py-2.5 text-center bg-gradient-to-r from-purple-500 to-indigo-700 hover:shadow-md rounded-md hover:shadow-indigo-500/50 duration-300 ease-out">Comece agora</button>
+                    </Link>
+                </div>
+             </div>
         </div>
     </div>
     </section>

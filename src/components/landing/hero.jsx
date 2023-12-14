@@ -12,8 +12,9 @@ function Hero() {
                 <h1 className="text-4xl font-bold text-gray-800 sm:text-4xl md:text-6xl">Organize e melhore sua produtividade</h1>
                 <p className="mt-6 mb-6 text-lg text-gray-600">Simples e flexível. Bastam quadros, listas e cartões para obter uma visualização clara de quem está fazendo o que e o que precisa ser feito.</p>
 
-                
-                <a href="signUp" className="inline-flex items-center px-4 py-3 mr-2 text-sm font-semibold text-white duration-300 ease-out rounded-full gap-x-2 bg-gradient-to-r from-purple-500 to-indigo-700 hover:scale-105 hover:shadow-xl hover:shadow-indigo-500/50 ">Comece agora</a>
+                <Link to='signUp'>
+                  <a className="inline-flex items-center px-4 py-3 mr-2 text-sm font-semibold text-white duration-300 ease-out rounded-full gap-x-2 bg-gradient-to-r from-purple-500 to-indigo-700 hover:scale-105 hover:shadow-xl hover:shadow-indigo-500/50 ">Comece agora</a>
+                </Link>
 
                 <a className="inline-flex items-center px-4 py-3 mb-6 text-sm font-semibold text-gray-800 duration-300 border border-gray-800 rounded-full gap-x-2 hover:border-gray-500 hover:text-gray-500 hover:scale-105" href="#prices">Ver preços </a>
               </div>
