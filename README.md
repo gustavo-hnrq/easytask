@@ -17,10 +17,6 @@ O EasyTask visa simplificar a gestão de tarefas, proporcionando uma abordagem v
 
 - Navegação amigável para uma experiência simplificada.
 
-### Colaboração Eficiente 💬
- 
-- Adicione membros da equipe aos projetos.
-
 ## Como Baixar e Rodar o Projeto 🚀
  
 Para executar o EasyTask em sua máquina local, siga as instruções abaixo:
